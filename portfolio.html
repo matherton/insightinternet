@@ -1,0 +1,306 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<script src="js/libs/jquery-1.7.2.js"></script>
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Insight Internet - Portfolio</title>
+  <meta name="description" content="">
+
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <link rel="stylesheet" href="css/ii-styles.css">
+  <link href="css/lightbox.css" rel="stylesheet" />
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except this Modernizr build.
+       Modernizr enables HTML5 elements & feature detects for optimal performance.
+       Create your own custom Modernizr build: www.modernizr.com/download/ -->
+  
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="js/libs/jquery.tools.1.2.7.min.js"></script>
+  <!-- needed for lightbox -->
+	<script src="js/lightbox.js"></script>
+	
+  <!--<script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>-->
+  <link rel="icon" href="img/me.ico">
+</head>
+<body class="portfolio">
+	
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  
+  <div id="header-container">
+  	<header>
+		<header class="wrapper clearfix">
+			<div id="half-oval-top"></div>
+			<a href="index.html" title="back to home"><h1 id="title">Insight Internet</h1></a>
+			<div id="half-oval-bottom"></div>
+			<nav>
+				<ul>
+					<li><a id="about" href="cv.html" title="my online CV" alt=""><hide>online </hide>CV</a></li>
+					<li><a id="github" href="github.html" title="my gists on github" alt="">github</a></li>
+					<li><a id="portfolio" href="portfolio.html" title="my portfolio" alt="">portfolio</a></li>
+				</ul>
+			</nav>
+		</header>
+  	</header>
+  </div> <!-- close header-container -->
+   
+  <div id="main-container">
+		<div id="main" class="wrapper clearfix">
+			
+			<article class="fullwidth">
+				<header>
+					<h1 class="portfolio">My Portfolio</h1>
+				</header>
+
+				<section class="gallery top">
+					<h2 class="ggf">Grand Gesture Films</h2>
+					<p>Created the new Grand Gesture Films WordPress website in a freelance capacity. I worked with a Senior Designer and created the site to his designs. Grand Gesture Films make promotional films, corporate films, TV ads, training films, viral films, animated films, and mainstream drama. The website displays thier films and one of the main requirements was to implement a Show Reel video background on the homepage that could be changed through the WordPress dashboard.</p>
+					<div class="imgagegallery">
+						<a href="http://www.grandgesturefilms.com" target="_blank" title="Grand Gesture Films homepage"><img src="img/portfolio/grandgesturefilms/ggf-home.jpg" alt=""/></a>
+						<a href="http://grandgesturefilms.com/work/" target="_blank" title="Grand Gesture Films workpage"><img src="img/portfolio/grandgesturefilms/ggf-work.jpg" alt=""/></a>
+					</div>
+				</section>
+
+				<section class="gallery">
+					<h2 class="aegon">Aegon</h2>
+					<p>Worked as a Senior UX Consultant for Aegon on a 7 month contract. Duties included: Finalising Adobe Azure HiFi web journeys with key stake holders, creating these finalised web journey's in Bootstrap and integrating them into their codebase using SourceTree. Ensured that these builds responded as required on different devices/screen widths, coding bespoke JS functionality as instructed by the team lead, responsible for ensuring that all code I produced adhered to the UX teams accessibility standards as well as ensuring appropriate ARIA attributes where incorporated allowing users of assistive technology access to all content. We used Bitbucket as our code repository which was linked to JIRA enabling the rest of the business to assign tasks to the UX team and keep track of current project progress.</p>
+					<div class="imgagegallery">
+						<a href="https://www.aegon.co.uk/index.html" target="_blank" title="Aegon homepage"><img src="img/portfolio/aegon/aegon-home-page.png" alt=""/></a>
+						<a href="https://retiready.co.uk/retiready.html" target="_blank" title="Retiready homepage"><img src="img/portfolio/aegon/retiready-home-page.png" alt=""/></a>
+					</div>
+				</section>
+
+				<section class="gallery">
+					<h2 class="neyber">Neyber</h2>
+					<p>Worked for Neyber as a Front-end Developer for 5 months. Duties included: creating various responsive pages using bootstrap and associated JS functionality (e.g. D.O.B. logic to account for leap years, converting JSON feeds to .csv reports in Angular.JS etc.), making all of their responsive emails ensuring they displayed correctly in all email clients and devises. I worked with the UX and Design departments to ensure all pages developed matched their mockups at all screen widths. All task where assigned by the BA manager through JIRA, utilised Agile Scrum to track progress of assigned tasks/identify any development problems and used private GitHub repos for source control.</p>
+					<div class="imgagegallery">
+						<a href="http://www.neyber.co.uk" target="_blank" title="Neyber homepage"><img src="img/portfolio/neyber/neyber-new.jpg" alt=""/></a>
+						<a href="https://www.neyber.co.uk/ucn" target="_blank" title="Neyber login page"><img src="img/portfolio/neyber/neyber-loginpage-icon.jpg" alt=""/></a>
+						<a href="img/portfolio/neyber/pin-validation-email-new.html" target="_blank" title="Neyber PIN validation email"><img src="img/portfolio/neyber/pin-validation-email-icon.jpg" alt=""/></a>
+					</div>
+				</section>
+
+				<!--<section class="gallery">
+					<h2 class="mason">Mason Digital</h2>
+					<p>Completed a short contract for Mason Digital to create their client the <a onclick="popUp()">YHA, responsive email</a> from their design. Also used Litmus to ensure it appears identically in all email clients.</p>
+				</section>-->
+
+				<section class="gallery">
+					<h2 class="matchbyte">Match Byte</h2>
+					<p>Employed by Match Byte for 9 months as a Web Developer. I worked on a number of their client projects such as Fly Thomas Cook's Car Hire and Insurance responsive pages, creation of the Hong Express booking system which has complex JavaScript/jQuery functionality for elements such as the seat selection app, JamboJet's Lowest Fare and Price Lock pages and their JavaScript/jQuery functionality. I also created matchbyte.com using bootstrap from design supplied by their designer based in Melbourne as well as creating mobile and tablet designs that had been missed out. All tasks where passed to me through JIRA by Project Managers and GitHub was used for source control.</p>
+					<div class="imgagegallery">
+						<a href="http://www.matchbyte.com" target="_blank" title="Match Byte homepage"><img src="img/portfolio/matchbyte/home-page.png" /></a>
+						<a href="http://www.hkexpress.com/" target="_blank" title="Hong Kong Express - flight selection page"><img src="img/portfolio/matchbyte/HKEFlightSelection.png" /></a>
+						<a href="http://www.jambojet.com/us/" target="_blank" title="JamboJet low fare finder"><img src="img/portfolio/matchbyte/jambojet-home.png" /></a>
+					</div>
+				</section>
+
+				<section class="gallery">
+					<h2 class="mindunit">Mind Unit</h2>
+					<p>Employed by Mind Unit for a year as a PHP Developer. I developed various clients desktop and responsive websites. I primarily worked with their EasyCMS including the redevelopment of www.city-academy.com, bug fixes, new template builds as well as Wordpress and SilverStripe development as required. Also required to perform various server maintenance task such as setting up scheduled tasks (cron  jobs) and their scripts.</p>
+					<div class="imgagegallery">
+						<a href="http://www.mindunit.com" target="blank" title="The Mind Unit homepage"><img src="img/portfolio/mindunit/home.png" /></a>
+						<a href="http://thephotographersgallery.org.uk/" target="blank" title="The Photographers Gallery"><img src="img/portfolio/mindunit/photographers-gallery.png" /></a>
+						<a href="http://www.city-academy.com/" target="blank" title="City Academy Homepage"><img src="img/portfolio/mindunit/city-homepage.png" /></a>
+					</div>
+				</section>
+
+				<section class="gallery">
+
+					<h2 class="selfridges">Selfridges</h2>
+					<p>Employed by Selfridges on rolling week by week contract as a front-end web developer for several months until they appointed a permanent member of staff. About 70% of my time was spent converting PSD email designs into HTML email Newsletters. This was a large revenue stream for the Online Department and around 10 Newsletters which I had created were issued each week. The rest of my time was spent updating the main website with new content such as banners and adding new sections to the Self Expression area of the site. I also worked 3 days with my replacement to train him using training guides I had created.</p>
+
+					<div id="gallery-holder">					
+					<!-- previous page action -->
+					<a class="prev browse left"></a>
+
+					<!-- root element for scrollable --> 
+					<div class="scrollable" id="scrollable">
+					   
+					   <!-- root element for the items -->
+					   <div class="items">
+					   
+					      <!-- emails -->
+					      <div class="imgagegallery-selfridges">
+					        <a href="img/portfolio/marcbymarc.png" rel="lightbox" title="Marc by Marc Jacobs HTML email"><img src="img/portfolio/selfridges/marcbymarc-carousel.png" /></a>
+									<a href="img/portfolio/beauty_workshop-large.png" rel="lightbox" title="Beauty Worksghop HTML email"><img src="img/portfolio/selfridges/beauty-workshop.png" /></a>
+									<a href="http://www.selfridges.com/en/Menswear/Categories/Denim/" target="blank" title="view my banner on selfriges.com"><img src="img/portfolio/selfridges/jeans-banner.png" /></a>
+						  	</div>
+					      
+					      <!-- css banners --> 
+					      <div class="imgagegallery-selfridges">
+					         <a href="http://www.selfridges.com/en/Menswear/Categories/Denim/" target="blank" title="view my banner on selfriges.com"><img src="img/portfolio/selfridges/jeans-banner.png" /></a>
+					         <a href="http://www.selfridges.com/en/Accessories/Categories/NEW-IN/" target="blank" title="view my banner on selfriges.com"><img src="img/portfolio/selfridges/whats_new.png" /></a>
+					         <a href="http://www.selfridges.com/en/Kids/Categories/Prams/" target="blank" title="view my banner on selfriges.com"><img src="img/portfolio/selfridges/push-it.png" /></a>
+					         <!--<a href="http://www.selfridges.com/en/Womenswear/Categories/Coats-jackets/" target="blank" title="view my banner on selfriges.com"><img src="img/portfolio/selfridges/the_great_cover_up.png" /></a>-->
+					      </div>
+					      
+					      <!-- guides -->
+					      <div class="imgagegallery-selfridges">
+					         <a href="https://docs.google.com/open?id=0B6kipQjZIJKBblJEOHR3YU15WFk" target="blank" title="view my Email Creation guide on google drive"><img src="img/portfolio/selfridges/email-process.png" /></a>
+					         <a href="https://docs.google.com/document/d/1udL6M5bh0O08GbCb2hLz3b-9Ciz64eP-AUkZiDX_ruk/edit" target="blank" title="view my Cheetahmail guide on google drive"><img src="img/portfolio/selfridges/cheetahmail-guide.png" /></a>
+					         <a href="https://docs.google.com/open?id=0B6kipQjZIJKBdGRJa1RhQVlMM00" target="blank" title="view my Content Portal guide on google drive"><img src="img/portfolio/selfridges/content-portal-guide.jpg" /></a>
+					      </div>
+					      
+					   </div>
+					   
+					</div>
+
+					<!-- next page action -->
+					<a class="next browse right"></a>
+					</div>
+				</section>
+				<section class="gallery-mobile">
+					<div class="imgagegallery">
+						<a href="img/portfolio/marcbymarc.png" rel="lightbox" title="Marc by Marc Jacobs HTML email"><img src="img/portfolio/selfridges/marcbymarc-carousel.png" /></a>
+						<a href="img/portfolio/beauty_workshop-large.png" rel="lightbox" title="Beauty Worksghop HTML email"><img src="img/portfolio/selfridges/beauty-workshop.png" /></a>
+						<a href="http://www.selfridges.com/en/Menswear/Categories/Denim/" target="blank" title="view my banner on selfriges.com"><img src="img/portfolio/selfridges/jeans-banner.png" /></a>
+						<a href="http://www.selfridges.com/en/Accessories/Categories/NEW-IN/" target="blank" title="view my banner on selfriges.com"><img src="img/portfolio/selfridges/whats_new.png" /></a>
+						<a href="https://docs.google.com/open?id=0B6kipQjZIJKBblJEOHR3YU15WFk" target="blank" title="view my Email Creation guide on google drive"><img src="img/portfolio/selfridges/email-process.png" /></a>
+         				<a href="https://docs.google.com/document/d/1udL6M5bh0O08GbCb2hLz3b-9Ciz64eP-AUkZiDX_ruk/edit" target="blank" title="view my Cheetahmail guide on google drive"><img src="img/portfolio/selfridges/cheetahmail-guide.png" /></a>
+					</div>
+				</section>
+				
+				<section class="gallery">
+					<h2 class="stage">The Stage</h2>
+					<p>Employed by The Stage on a 9-month contract to create the Stage Events and the Stage Directory websites. A reason why I was particularly enthusiastic to undertake this contract was because I could  expand my Wordpress/PHP skills in the creation of the Events site and also get my first commercial work experience in a Ruby on Rails project creating the Directory site. Amongst other software development tasks I was responsible for the integration of the EventBrite API to fulfill ticket sales, creation of the events calendar, creating all the views on the directory site, the pagination of the categories list by adapting the will paginate gem, creating all forms and associated controller logic and all the Sass and HAML as well as some coffeescript.</p>
+					<div class="imgagegallery">
+						<a href="http://www.thestage.co.uk/directory/" target="blank" title="The Stage Directory website"><img src="img/portfolio/thestage/directory.png" /></a>
+
+
+						<a href="img/portfolio/thestage/events-large.png" rel="lightbox" alt="The Stage Events website - NO LONGER LIVE" title="The Stage Events website - NO LONGER LIVE"><img src="img/portfolio/thestage/events.png" /></a>
+
+						<a href="img/portfolio/thestage/calendar-large.png" rel="lightbox" alt="Events website calendar - NO LONGER LIVE" title="Events website calendar - NO LONGER LIVE"><img src="img/portfolio/thestage/calendar.png" /></a>
+					</div>
+				</section>
+								
+				<section class="gallery">
+					<h2 class="hpa">Health Protection Agency</h2>
+					<p>The Health Protection Agency employed me as e-Bug Web Developer after I returned from Australia, where my stay was limited by the 1 year Working Visa restrictions. The website, www.e-bug.eu, was created by an external Flash Agency and I was responsible for ensuring all their work adhered to the HPA specifications and reporting any issues to them for resolution. All of the content of e-bug.eu is created through XML feeds, meaning that the HPA has full control of the content without having to go back to the Agency. I created all of the XML feeds for the site and 29 different language versions. I also administered/developed the bespoke VB.net CMS behind the e-Bug Teachers Area, created a testing environment, which allowed me to adapt the SQL database structure to improve the site’s page load time.</p>
+					<div class="imgagegallery">
+						<a href="http://e-bug.eu/" target="blank" title="e-bug.eu"><img src="img/portfolio/hpa/ebug.png" /></a>
+						<a href="http://www.e-bug.eu/eng_home.aspx?ss=1&cc=eng&t=Welcome%20to%20e-Bug" target="blank" title="e-bug teachers site"><img src="img/portfolio/hpa/teachers.png" /></a>
+						<a href="img/portfolio/hpa/ebug_diagram_large.png" rel="lightbox" title="e-Bug server diagram"><img src="img/portfolio/hpa/ebug_diagram.png" /></a>
+					</div>
+				</section>
+				
+				<section class="gallery">
+					<h2 class="rode">RODE Microphones</h2>
+					<p>During my year in Australia I worked for RODE Microphones as a PHP Web Developer for 6 months (the limit for working with an employer under the Working Visa restrictions). I was responsible for creating online promotional forms which allowed users to create accounts on rodemic.com and receive free gifts such as a T-shirt or yo-yo. I also created the Vicoustic Flexi Screen Lite for $1 form which took credit card payments. I converted their former RODETV flash website into a wordpress site, which showcased all their videos. This greatly increased the number of people accessing it and the amount of time they spent on the site. Amongst other tasks I also created the Headset and Lavier Microsite to promote RODE's new presentation microphones.</p>
+					<div class="imgagegallery">
+						<a href="img/portfolio/rode/RODE-HS1-Headset-microsite.png" rel="lightbox" title="RODE MICON adapter micro site"><img src="img/portfolio/rode/rodemic_home_headset.png" /></a>
+						<a href="img/portfolio/rode/RODETV-James-Lavelle.png" rel="lightbox" title="Wordpress version of RODE TV"><img src="img/portfolio/rode/rodetv.png" /></a>
+						<a href="img/portfolio/rode/RODE-Vicoustic-form.png" rel="lightbox" title="Vicoustic Flexi Screen Lite registration form"><img src="img/portfolio/rode/vicoustic.png" /></a>
+					</div>
+				</section>
+				
+				<section class="gallery">
+					<h2 class="ageuk">AGE UK</h2>
+					<p>I worked for Age Concern England for two and a half years as their Web Producer. I trained over 150 members of staff to use RedDot their CMS behind ageconcern.org.uk. I also worked closely with Precedent their external Development Agency to ensure all websites they produced for us adhered to Age Concern accessibility and usability guidelines. Created new RedDot page templates as required i.e. the full width Google map template we needed for the Fit as a Fiddle campaign. Also created a cold fusion search for www.acbrandgudlines.org.uk which allowed users to search through all the brand images on the site by category and worked closely with the design team to produce all of their HTML newsletters. Project managed the creation of the Age Concern online Bookshop which was created by Precedent to sell Age Concern books.</p>
+					<div class="imgagegallery">
+						<a href="img/portfolio/ageconcern/AChome-large.png" rel="lightbox" title="Age Concern home page"><img src="img/portfolio/ageconcern/AChome.png" /></a>
+						<a href="img/portfolio/ageconcern/bookshop-large.png" rel="lightbox" title="Age Concern Bookshop home page"><img src="img/portfolio/ageconcern/bookshop.png" /></a>
+						<a href="img/portfolio/ageconcern/FaaF-large.png" rel="lightbox" title="Fit as a Fiddle google map"><img src="img/portfolio/ageconcern/FaaF.png" /></a>
+					</div>
+				</section>
+
+				<section class="gallery">
+					<h2 class="biw">BIW Technolgies</h2>
+					<p>I started working for BIW Technologies in 2006 as Web/Graphic Designer. My responsibilities included: creating <a href="img/portfolio/prelondon/OvalFinal.swf" target="_blank">Flash movies</a> (example opens in new tab) for the web and conferences, setting up BIW Technologies Intranet using DotNetNuke and providing support to users, producing banners, graphics, animations for corporate presentations, creating graphics for literature and using Quark to produce BIW data sheets.</p>
+					<div class="imgagegallery">
+						<img src="img/portfolio/prelondon/BIWTech.jpg" title="Site no longer live" />
+						<a href="img/portfolio/prelondon/banners.png" rel="lightbox" title="6ft high banner stands for the BIW conference"><img src="img/portfolio/prelondon/banners.png" height="200" width="160" /></a>
+					</div>
+				</section>
+
+				<section class="gallery">
+					<h2 class="nhs">NHS Shetland</h2>
+					<p>I started working for NHS Shetland in 2003 on a 2-year funded project to create the NHS Shetland website. My key achievements included: creating and implementing the NHS Boards main public facing website which allowed rural island communities access to health care services, creating a clickable image map of the islands so users could easily find relavent information by clicking on their area, liaised with Community NHS workers to develop the Community Healthcare section of the site and liaised with every Hospital Department to create their micro sites.</p>
+					<div class="imgagegallery">
+						<a href="http://www.shb.scot.nhs.uk/" target="blank">	
+							<img src="img/portfolio/prelondon/NHSShetland.jpg" title="Shetland NHS homepage" />
+						</a>
+						<a href="http://www.shb.scot.nhs.uk/community/index.asp" target="blank">	
+							<img src="img/portfolio/prelondon/shetland-image-map.png" height="200" width="129" title="Shetland clickable image map" />
+						</a>
+					</div>
+				</section>
+
+				<section class="gallery">
+					<h2 class="disshet">Disability Shetland</h2>
+					<p>I started working for a Voluntary sector Organization called Disability Shetland in 2002. Worked on their Computer and Internet projects that were set up to provide disabled local members of the community with free access to computer equipment and the Internet. Responsibilities included: ensuring machines operated correctly prior to installation into clients homes, corresponding with and providing support to clients in the use of their PC's, Keeping track of the projects finances, updating and the further development of their web site.</p>
+					<div class="imgagegallery">
+						<img src="img/portfolio/prelondon/DShome.jpg" title="site no longer live" />
+					</div>
+				</section>
+			</article>
+
+			<a href="#0" class="cd-top">Top</a>
+			
+		</div> <!-- #main closed -->
+  </div> <!-- #main-container closed -->
+  <footer>
+	<div id="footer-container">
+		<footer class="wrapper">
+			<nav>
+				<ul>
+					<li><a id="about" href="cv.html" title="My online CV"><hide>online </hide>CV</a></li>
+					<li><a id="github" href="github.html" title="my gists on github">github</a></li>
+					<li><a id="portfolio" href="portfolio.html" title="My portfolio">portfolio</a></li>
+				</ul>
+			</nav>
+			<h3>&copy; 2016 <a href="index.html">Insight Internet</a></h3>
+		</footer>
+	</div>
+  </footer>
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write(' src="js/libs/jquery-1.7.1.min.js">')</script>
+  <script src="js/libs/jquery-1.7.1.min.js"></script>
+-->
+  <!-- scripts concatenated and minified via build script -->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts -->
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet 
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>-->
+  <script>
+	$(function() {
+  	// initialize scrollable
+  	$(".scrollable").scrollable();
+	});
+	/*function popUp() {
+	    window.open("yha-email/index.htm");
+	};*/
+
+  </script>
+
+</body>
+</html>

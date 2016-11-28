@@ -1,0 +1,10 @@
+a {
+       display: block;
+       background: url(sprite.png) no-repeat;
+       height: 74px;
+       width: 74px;
+}
+
+a:hover {
+       background-position: 0 -30px;
+}
