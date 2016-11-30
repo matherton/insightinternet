@@ -218,6 +218,7 @@ h1.portfolio {
 	left: -9999px;
 }
 
+
 h2.aegon {
 	background: url('../img/portfolio/sprite.png') no-repeat 0 -1075px;
 	width: 190px;
@@ -316,6 +317,12 @@ h2.ggf {
 	text-indent: -9999px;
 }
 
+h2.signal {
+	background: url('../img/portfolio/sprite.png') no-repeat -1px -1252px;
+	width: 285px;
+	height: 50px;
+	text-indent: -9999px;
+}
 /* portfolio jQuery gallery */
 
 a:active {
