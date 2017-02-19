@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Shelter Web Developer Test</title>
+<link rel="stylesheet" href="css/styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<main class="content">
+
+<section class="section">
+    <header>
+    <h1 class="title">Shelter Scotland in your area</h1>
+    </header>
+
+  <article class="intro-text">
+        <div class="column">
+        <p>As part of Shelter Scotland's work to tackle homelessness, we run many different projects across Scotland. These projects are developed to address local needs, but also to demonstrate solutions for others to implement</p>
+        </div>
+        
+        <div class="column">
+        <p>As well as providing practical and emotional support to homeless people, we try to address broader issues causing or contributing to homelessness, such as lack of affordable housing, poverty and disadvantage.</p>
+        </div>
+        
+        <div class="column">
+        <p>We have four community hubs - in Glasgow, Edinburgh, Dundee and Aberdeen. We also deliver services in South Lanarkshire, Dumfries and East Lothian.</p>
+        </div>
+    </article>
+</section>
+<section class="section">    
+    <div class="map-container">
+      <div class="key-holder">
+      	<ul>
+        	<li class="aberdeen"><a href="aberdeen.html" id="AberdeenLink">Aberdeen</a></li>
+            <li class="dundee"><a href="dundee.html" id="DundeeLink">Dundee</a></li>
+            <li class="edinburgh"><a href="edinburgh.html" id="EdinburghLink">Edinburgh</a></li>
+            <li class="glasgow"><a href="glasgow.html" id="GlasgowLink">Glasgow</a></li>
+        </ul>
+      </div>
+    	
+
+      <div class="map-holder">
+      <img src="img/scotland-city-map.png" class="scotland-map" alt="clickable map of Scotland" usemap="#services"/>
+        <map name="services">
+          <area shape="poly" coords="259,199" href="#">
+          <area shape="poly" coords="242,226" href="#">
+          <area shape="poly" coords="243,226" href="#">
+          <area shape="poly" coords="243,227" href="#">
+          <area shape="poly" coords="190,308,175,313" href="#">
+          <area shape="circle" coords="259,404,13" href="glasgow.html" id="glasgow"><span class="tooltip glasgow" id="tooltipGlasgow">Go to Glasgow services</span>
+          <area shape="circle" coords="353,401,12" href="edinburgh.html" id="edinburgh"><span class="tooltip edinburgh" id="tooltipEdinburgh">Go to Edinburgh services</span>
+          <area shape="circle" coords="371,337,13" href="dundee.html" id="dundee"><span class="tooltip dundee" id="tooltipDundee">Go to Dundee services</span>
+          <area shape="circle" coords="437,238,12" href="aberdeen.html" id="aberdeen"><span class="tooltip aberdeen" id="tooltipAberdeen">Go to Aberdeen services</span>
+        </map>
+      </div>
+    </div>
+</section>
+
+<section class="section">
+  <img src="img/scotland-city-map.png" class="static-map" />
+</sectio>
+    
+</main>
+
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+</html>
