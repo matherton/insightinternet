@@ -236,7 +236,7 @@ li.aberdeen:before {
 }
 
 .half-wrapper {
-  background: #bcdaef;
+  min-height: 500px;
 }
 
 .column.half {
@@ -248,8 +248,6 @@ li.aberdeen:before {
   float: left;
   margin: auto 1em;
 }
-
-
 
 @media only screen and (min-width: 768px) {
   .column.half {
@@ -276,21 +274,21 @@ li.aberdeen:before {
 }
 
 /* form styles */
-.form-container {
-  clear: both;
-  max-width:400px;
-  width:100%;
-  margin:0 auto;
-  position:relative;
-  float: left;
+.section.contact {
+  padding-top: 2em;
+  background:#F9F9F9;
 }
 
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] 
+{ 
+  font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; 
+}
 
 #contact {
   background:#F9F9F9;
   padding:25px;
-  margin:50px 0;
+  margin: 0 auto;
+  max-width: 400px;
 }
 
 #contact h3 {
@@ -372,8 +370,8 @@ fieldset {
  color:#888;
 }
 
-@media only screen and (min-width: 768px) {
+/*@media only screen and (min-width: 768px) {
   .map-holder-hub img {
     margin-top: 2em;
   }
-}
+}*/

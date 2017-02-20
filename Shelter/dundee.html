@@ -67,40 +67,32 @@
     </article>
 </section>
 
-<section class="section">
-  <article class="intro-text">
-  <div class="form-container">
+<section class="section contact">
 
-    <form id="contact" action="" method="post">
-      <h3>Contact us</h3>
-      <h4>Please fill in all the fields below</h4>
-      <fieldset>
-        <input placeholder="Your name" type="text" tabindex="1" required>
-      </fieldset>
-      <fieldset>
-        <input placeholder="Your phone Number" type="tel" tabindex="3" required>
-      </fieldset>
-      <fieldset>
-        <input placeholder="Your email address" type="email" tabindex="4" required>
-      </fieldset>
-      <fieldset>
-        <textarea placeholder="Please tell us about your situation?" tabindex="5" required></textarea>
-      </fieldset>
-      <fieldset>
-        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-      </fieldset>
-    </form>
-   
-  </div>
+  <form id="contact" action="" method="post">
+    <h3>Contact us</h3>
+    <h4>Please fill in all the fields below</h4>
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your phone Number" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your email address" type="email" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Please tell us about your situation?" tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
 
-  <div class="map-holder-hub">
-    <img src="img/scotland-city-map-hub.png" alt="" width="235" height="358" usemap="#hubMap" />
-    <map name="hubMap">
-      <area shape="circle" coords="209,139,9" href="aberdeen.html" alt="Aberdeen image map hotspot" title="Go to Aberdeen services">
-      <area shape="circle" coords="178,197,9" href="dundee.html" alt="Dundee image map hotspot" title="Go to Dundee services">
-      <area shape="circle" coords="169,233,9" href="edinburgh.html" alt="Edinburgh image map hotspot" title="Go to Edinburgh services">
-      <area shape="circle" coords="124,236,9" href="glasgow.html" alt="Glasgow image map hotspot" title="Go to Glasgow service">
-    </map>
+</section>
+
+<section class="section">    
+    <div class="map-container">
       <div class="key-holder">
         <ul>
           <li class="aberdeen"><a href="aberdeen.html" id="AberdeenLink">Aberdeen</a></li>
@@ -108,12 +100,33 @@
             <li class="edinburgh"><a href="edinburgh.html" id="EdinburghLink">Edinburgh</a></li>
             <li class="glasgow"><a href="glasgow.html" id="GlasgowLink">Glasgow</a></li>
         </ul>
+      </div>
+      
+
+      <div class="map-holder">
+      <img src="img/scotland-city-map.png" class="scotland-map" alt="clickable map of Scotland" usemap="#services"/>
+        <map name="services">
+          <area shape="poly" coords="259,199" href="#">
+          <area shape="poly" coords="242,226" href="#">
+          <area shape="poly" coords="243,226" href="#">
+          <area shape="poly" coords="243,227" href="#">
+          <area shape="poly" coords="190,308,175,313" href="#">
+          <area shape="circle" coords="259,404,13" href="glasgow.html" id="glasgow"><span class="tooltip glasgow" id="tooltipGlasgow">Go to Glasgow services</span>
+          <area shape="circle" coords="353,401,12" href="edinburgh.html" id="edinburgh"><span class="tooltip edinburgh" id="tooltipEdinburgh">Go to Edinburgh services</span>
+          <area shape="circle" coords="371,337,13" href="dundee.html" id="dundee"><span class="tooltip dundee" id="tooltipDundee">Go to Dundee services</span>
+          <area shape="circle" coords="437,238,12" href="aberdeen.html" id="aberdeen"><span class="tooltip aberdeen" id="tooltipAberdeen">Go to Aberdeen services</span>
+        </map>
+      </div>
     </div>
-  </div>
-  </article>
+</section>
+
+<section class="section">
+  <img src="img/scotland-city-map.png" class="static-map" />
 </section>
 
 </main>
+
+<script type="text/javascript" src="js/scripts.js"></script>
 
 </body>
 </html>
