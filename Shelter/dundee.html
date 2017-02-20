@@ -67,29 +67,53 @@
     </article>
 </section>
 
-<div class="form-container">  
-  <form id="contact" action="" method="post">
-    <h3>Contact us</h3>
-    <h4>Please fill in all the fields below</h4>
-    <fieldset>
-      <input placeholder="Your name" type="text" tabindex="1" required>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your phone Number" type="tel" tabindex="3" required>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your email address" type="email" tabindex="4" required>
-    </fieldset>
-    <fieldset>
-      <textarea placeholder="Please tell us about your situation?" tabindex="5" required></textarea>
-    </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-    </fieldset>
-  </form>
- 
-  
-</div>
+<section class="section">
+  <article class="intro-text">
+  <div class="form-container">
+
+    <form id="contact" action="" method="post">
+      <h3>Contact us</h3>
+      <h4>Please fill in all the fields below</h4>
+      <fieldset>
+        <input placeholder="Your name" type="text" tabindex="1" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your phone Number" type="tel" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your email address" type="email" tabindex="4" required>
+      </fieldset>
+      <fieldset>
+        <textarea placeholder="Please tell us about your situation?" tabindex="5" required></textarea>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+    </form>
+   
+  </div>
+
+  <div class="map-holder-hub">
+    <img src="img/scotland-city-map-hub.png" alt="" width="235" height="358" usemap="#hubMap" />
+    <map name="hubMap">
+      <area shape="circle" coords="209,139,9" href="aberdeen.html" alt="Aberdeen image map hotspot" title="Go to Aberdeen services">
+      <area shape="circle" coords="178,197,9" href="dundee.html" alt="Dundee image map hotspot" title="Go to Dundee services">
+      <area shape="circle" coords="169,233,9" href="edinburgh.html" alt="Edinburgh image map hotspot" title="Go to Edinburgh services">
+      <area shape="circle" coords="124,236,9" href="glasgow.html" alt="Glasgow image map hotspot" title="Go to Glasgow service">
+    </map>
+      <div class="key-holder">
+        <ul>
+          <li class="aberdeen"><a href="aberdeen.html" id="AberdeenLink">Aberdeen</a></li>
+            <li class="dundee"><a href="dundee.html" id="DundeeLink">Dundee</a></li>
+            <li class="edinburgh"><a href="edinburgh.html" id="EdinburghLink">Edinburgh</a></li>
+            <li class="glasgow"><a href="glasgow.html" id="GlasgowLink">Glasgow</a></li>
+        </ul>
+    </div>
+  </div>
+  </article>
+</section>
+
+</main>
 
 </body>
 </html>
