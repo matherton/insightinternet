@@ -5,6 +5,10 @@
 	clear: both;
 }
 
+.section.map {
+  background: #efefef;
+}
+
 a {
   color: #007ab7;
   text-decoration: none;
@@ -20,6 +24,7 @@ body {
   line-height: 24px;
   color: rgb(98,98,98);
   background-color: #fff;
+  margin: 0px;
 }
 
 .title {
@@ -58,7 +63,6 @@ body {
 }
 
 .map-holder {
-  position: relative;
   display: none;  
 }
 
@@ -191,6 +195,7 @@ body {
 ul {
   list-style: none;
   text-align: left;
+  margin: 0px;
 }
 
 li:before {
@@ -201,6 +206,7 @@ li:before {
   width: 50px;
   height: 50px;
   margin: 0 15px 25px 0;
+  border-radius: 3em;
 }
 li.glasgow:before {
   background: #3e67b3;
@@ -369,9 +375,3 @@ fieldset {
 :-ms-input-placeholder {
  color:#888;
 }
-
-/*@media only screen and (min-width: 768px) {
-  .map-holder-hub img {
-    margin-top: 2em;
-  }
-}*/
