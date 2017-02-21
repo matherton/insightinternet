@@ -204,18 +204,27 @@ li:before {
   margin: 0 15px 25px 0;
   border-radius: 3em;
 }
+
 li.glasgow:before {
   background: #3e67b3;
+  border: 3px solid red;
 }
+
 li.edinburgh:before {
   background: #ffcd00;
+  border: 3px solid red;
 }
+
 li.dundee:before {
   background: #680e2a;
+  border: 3px solid red;
 }
+
 li.aberdeen:before {
   background: #33832f;
+  border: 3px solid red;
 }
+
 .back:before {
     content: "«";
     padding-right: 5px;
