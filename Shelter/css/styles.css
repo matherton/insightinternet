@@ -5,10 +5,6 @@
 	clear: both;
 }
 
-.section.map {
-  background: #efefef;
-}
-
 a {
   color: #007ab7;
   text-decoration: none;
@@ -241,9 +237,9 @@ li.aberdeen:before {
   margin: auto 1em;
 }
 
-.half-wrapper {
+/*.half-wrapper {
   min-height: 500px;
-}
+}*/
 
 .column.half {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -281,8 +277,9 @@ li.aberdeen:before {
 
 /* form styles */
 .section.contact {
-  padding-top: 2em;
+  border-top: 2em solid #fff;
   background:#F9F9F9;
+  min-height: 670px;
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] 
@@ -374,4 +371,8 @@ fieldset {
 }
 :-ms-input-placeholder {
  color:#888;
+}
+
+.email-phone {
+  background: #efefef;
 }
