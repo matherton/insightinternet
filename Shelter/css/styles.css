@@ -1,9 +1,14 @@
 @charset "UTF-8";
 /* CSS Document for Shelter demo */
-.top {
+.top.regions {
   background: #ECE9E9;
   padding: 30px;
   padding-bottom: 60px;
+}
+
+.top {
+  background: #ECE9E9;
+  padding: 30px; 
 }
 
 .logo {
