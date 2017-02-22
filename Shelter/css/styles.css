@@ -43,6 +43,10 @@ body {
    font-weight: 200;
 }
 
+.content.home {
+  margin: 0 1em;
+}
+
 .content {
 	text-align: center;
 	min-height: 85%;
