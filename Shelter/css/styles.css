@@ -133,7 +133,8 @@ body {
 .tooltip {
   border-radius: 5px;
   position: relative;
-  background: #fff;
+  background: #000;
+  color: #fff;
   border: 2px solid black;
   width: 200px;
   text-align: center;
@@ -184,7 +185,7 @@ body {
 
 .tooltip.aberdeen {
   top: -435px;
-  right: -335px;
+  right: -332px;
   padding: 5px;
   display: none;
 }
@@ -216,23 +217,19 @@ li:before {
 }
 
 li.glasgow:before {
-  background: #3e67b3;
-  border: 3px solid red;
+  background: #ff0000;
 }
 
 li.edinburgh:before {
-  background: #ffcd00;
-  border: 3px solid red;
+  background: #ffcc00;
 }
 
 li.dundee:before {
-  background: #680e2a;
-  border: 3px solid red;
+  background: #339933;
 }
 
 li.aberdeen:before {
-  background: #33832f;
-  border: 3px solid red;
+  background: #333399;
 }
 
 .back:before {
