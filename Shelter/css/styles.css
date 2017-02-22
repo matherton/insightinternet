@@ -120,6 +120,7 @@ body {
 .key-holder li {
   float: left;
   margin-right: 2%;
+  position: relative;
 }
 
 @media only screen and (min-width: 768px) {
@@ -208,6 +209,15 @@ ul {
   list-style: none;
   text-align: left;
   margin: 0px;
+}
+
+/* make the the :before elements below part of clickable area */
+.before-click:after {
+    content: "";
+    padding: 36px;
+    position: absolute;
+    left: -5px;
+    top: 32px;
 }
 
 li:before {
