@@ -28,4 +28,9 @@ $(document).ready(function(){
 		);
 	});
 
+	
+
 });
+function fixedSizePopup() {
+	  var theWindow = window.open('https://matherton.typeform.com/to/Ggm0ss', '_blank', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no top=300,left=500,width=500,height=500')
+	}
