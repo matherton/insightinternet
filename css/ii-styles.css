@@ -937,6 +937,94 @@ a h1#title  {
 	}
 
 }
+/* =============================================================================
+   Flip Navigation styles
+   ========================================================================== */
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container{
+  width: 120px;
+  height: 75px;
+  position: relative;
+  float: left;
+} 
+
+.flip-container.centre {
+  margin: 0 .5rem;
+}
+
+.flip-container.centre .back {
+	margin: 0 .5em;
+}
+.front, .back {
+	width: 120px;
+	height: 75px;
+	border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: Helvetica, "Helvetica Neue", Arial;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+	background: #AAAf76;
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+  	background: #727493;
+  	height: 25px; /* fix to make fliped link have the same hieght as initial link */
+}
+
+.onlinecv {
+  width: 120px;
+  height: 75px;
+  background: #727493 url(http://insightinternet.co.uk/img/vert-sprite-blank-top.png) no-repeat 45% -80px;
+  border-radius: 5em;
+}
+
+.github {
+  width: 120px;
+  height: 75px;
+  background: #727493 url(http://insightinternet.co.uk/img/vert-sprite-blank-top.png) no-repeat 48% -160px;
+  border-radius: 5em;
+}
+
+.portfolio {
+  width: 120px;
+  height: 75px;
+  background: #727493 url(http://insightinternet.co.uk/img/vert-sprite-blank-top.png) no-repeat 49% -230px;
+  border-radius: 5em;
+}
 
 /* =============================================================================
    Print Styles
