@@ -320,6 +320,13 @@ h2.ggf {
 h2.signal {
 	background: url('../img/portfolio/sprite.png') no-repeat -1px -1252px;
 	width: 285px;
+	height: 36px;
+	text-indent: -9999px;
+}
+
+h2.visitscot {
+	background: url('../img/portfolio/sprite.png') no-repeat 0 -1291px;
+	width: 285px;
 	height: 50px;
 	text-indent: -9999px;
 }
@@ -701,6 +708,41 @@ text-align: left;*/
 }
 
 /* --------------------- */
+/* -------------------
+	 For button styles  
+	-------------------*/
+
+.formBtnHolder {
+	width: 100%;
+	height: 4rem;
+	text-align: center;
+	border: none;
+	clear: both;
+}
+
+.open-form {
+	display: inline-block;
+	padding: .5rem .5rem;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #AAAf76;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+	font-weight: bold;
+}
+
+.open-form:hover {background-color: #727493}
+
+.open-form:active {
+  background-color: #44462f;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
 @media only screen and (min-width: 768px) {
 
