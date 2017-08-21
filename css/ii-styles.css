@@ -997,7 +997,17 @@ a h1#title  {
   height: 75px;
   position: relative;
   float: left;
-} 
+  display: none;
+}
+
+@media only screen and (min-width: 1140px) {
+	.flip-container{
+		display: block;
+	}
+	.touchscreen-nav {
+		display: none;
+	}
+}
 
 .flip-container.centre {
   margin: 0 .5rem;
