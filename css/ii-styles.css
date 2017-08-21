@@ -1003,9 +1003,6 @@ a h1#title  {
   margin: 0 .5rem;
 }
 
-.flip-container.centre .back {
-	margin: 0 .5em;
-}
 .front, .back {
 	width: 120px;
 	height: 75px;
@@ -1044,26 +1041,25 @@ a h1#title  {
 .back {
 	transform: rotateY(180deg);
   	background: #727493;
-  	height: 25px; /* fix to make fliped link have the same hieght as initial link */
 }
 
 .onlinecv {
   width: 120px;
-  height: 75px;
+  height: 25px;
   background: #727493 url(http://insightinternet.co.uk/img/vert-sprite-blank-top.png) no-repeat 45% -80px;
   border-radius: 5em;
 }
 
 .github {
   width: 120px;
-  height: 75px;
+  height: 25px;
   background: #727493 url(http://insightinternet.co.uk/img/vert-sprite-blank-top.png) no-repeat 48% -160px;
   border-radius: 5em;
 }
 
 .portfolio {
   width: 120px;
-  height: 75px;
+  height: 25px;
   background: #727493 url(http://insightinternet.co.uk/img/vert-sprite-blank-top.png) no-repeat 49% -230px;
   border-radius: 5em;
 }
