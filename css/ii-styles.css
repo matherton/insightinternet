@@ -186,7 +186,7 @@ nav a#about:hover {
 	background: #727493 url('../img/vert-sprite-blank-top.png') no-repeat 45% -80px;
 }
 
-body.cv nav a#about {
+body.online-cv nav a#about {
 	text-indent: -9999px;
 	background: #727493 url('../img/vert-sprite-blank-top.png') no-repeat 45% -80px;
 }
@@ -206,7 +206,7 @@ nav a#portfolio:hover {
 	background: #727493 url('../img/vert-sprite-blank-top.png') no-repeat 49% -240px;
 }
 
-body.portfolio nav a#portfolio {
+body.portfolio-page nav a#portfolio {
 	text-indent: -9999px;
 	background: #727493 url('../img/vert-sprite-blank-top.png') no-repeat 49% -240px;
 }
@@ -1010,7 +1010,7 @@ a h1#title  {
 }
 
 .flip-container.centre {
-  margin: 0 .5rem;
+  margin: 0 3.5%;
 }
 
 .front, .back {
