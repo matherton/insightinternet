@@ -1,0 +1,252 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<script src="../js/libs/jquery-1.7.2.js"></script>
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Insight Internet - Visit Scotland</title>
+  <meta name="description" content="">
+
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <link rel="stylesheet" href="../css/ii-styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css" rel="stylesheet">
+  
+  <script src="../js/libs/modernizr-2.5.3.min.js"></script>
+	
+  <!--<script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>-->
+  <link rel="icon" href="img/me.ico">
+</head>
+<body class="portfolio-page">
+	
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  
+  <div id="header-container">
+  	<header>
+		<header class="wrapper clearfix">
+			<div id="half-oval-top"></div>
+			<a href="index.html" title="back to home"><h1 id="title">Insight Internet</h1></a>
+			<div id="half-oval-bottom"></div>
+			<nav>
+				<ul class="touchscreen-nav">
+					<li><a id="about" href="cv.html" title="my online CV"><hide>online </hide>CV</a></li>
+					<li><a id="github" href="github.html" title="social coding">git</a></li>
+					<li><a id="portfolio" href="portfolio.html" title="my portfolio">portfolio</a></li>
+				</ul>
+				<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+				    <div class="flipper">
+				      	<div class="front">
+				        	<!-- front content -->
+				        	<strong>online CV</strong>
+				      	</div>
+				      	<div class="back">
+					        <!-- back content -->
+					        <a href="cv.html" title="my online CV" alt="" class="onlinecv"></a>
+				    	</div>
+					</div>
+				</div>
+				 
+				<div class="flip-container centre" ontouchstart="this.classList.toggle('hover');">
+					<div class="flipper">
+				    	<div class="front">
+				        	<!-- front content -->
+				        	<strong>github</strong>
+				      	</div>
+					    <div class="back">
+					        <!-- back content -->
+					        <a href="github.html" title="my online CV" alt="" class="github"></a>
+					    </div>
+				    </div>
+				</div>
+				  
+				<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+				    <div class="flipper">
+				    	<div class="front">
+				        	<!-- front content -->
+				        	<strong>portfolio</strong>
+				      	</div>
+				      	<div class="back">
+				        	<!-- back content -->
+				        	<a href="portfolio.html" title="my online CV" alt="" class="portfolio"></a>
+				      	</div>
+				    </div>
+				</div>
+			</nav>
+		</header>
+  	</header>
+  </div> <!-- close header-container -->
+   
+  <div id="main-container">
+		<div id="main" class="wrapper clearfix">
+			
+			<article class="fullwidth">
+				<header>
+					<h1 class="portfolio">Weather Widget</h1>
+				</header>
+
+				<section class="gallery top">
+					<h2>Open Weather Map widget</h2>
+  					<p>Below is the Weather Widget I created for Visit Scotland. It uses the OpenWeatherMap API and will give you todays weather for any location in the world - however the auto complete kicks in after the first 3 characters are typed and gives you Scotish locations from the endpoint https://www.visitscotland.com/data/locations to suggest Scotish locations.</p>
+					<!-- Start of CMS markup -->
+					<div class="weather-app copy-copy">
+						<h3 class="title">What's todays <br>Forecast?</h3>
+					     <section>
+
+								<div class="top">
+									
+									<div class="weather-image">
+						  				<img width="37" height="37" id="weatherApp-icon" src="images/701.png">
+									</div>
+
+									<div class="temperature"><span id="weatherApp-temperature">0</span>°</div>
+
+									<div class="humidity">
+									    <img width="10" height="10" src="images/humidity.png">
+									    <span id="weatherApp-humidity">0</span>%
+									</div>
+									  
+									<div class="wind">
+										<img width="10" height="10" alt="" src="images/wind.png">
+										<span id="weatherApp-wind">&nbsp; 0</span> mph 
+										<span id="weatherApp-direction">N</span>
+									</div>
+									  
+								</div>
+
+						</section>	
+
+					      <section> 
+
+							<div class="location"><span class="options" id="weatherApp-location">Unknown</span></div>
+
+							<div class="location-select">
+								<div class="weather-widget">
+							    	<div class="ui-widget">
+								      <input id="weather-input" type="text" placeholder="Enter Location">
+								      	<button class="btn btn-primary" type="submit">
+					  						<span>Search</span>
+										</button>
+								      <br>
+								    </div>
+								</div>
+							</div>
+
+					      </section>
+					</div>
+
+					<!-- End of CMS markup -->
+					<br>
+				</section>
+				
+			</article>
+
+			<a href="#0" class="cd-top">Top</a>
+			
+		</div> <!-- #main closed -->
+		<section class="formBtnHolder">
+			<button onclick="fixedSizePopup()" class="open-form">Open contact form</button>
+		</section>
+  </div> <!-- #main-container closed -->
+  <footer>
+	<div id="footer-container">
+		<footer class="wrapper">
+			<nav>
+				<ul class="touchscreen-nav">
+					<li><a id="about" href="cv.html" title="My online CV"><hide>online </hide>CV</a></li>
+					<li><a id="github" href="github.html" title="social coding">git</a></li>
+					<li><a id="portfolio" href="portfolio.html" title="My portfolio">portfolio</a></li>
+				</ul>
+				<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+				    <div class="flipper">
+				      	<div class="front">
+				        	<!-- front content -->
+				        	<strong>online CV</strong>
+				      	</div>
+				      	<div class="back">
+					        <!-- back content -->
+					        <a href="cv.html" title="my online CV" alt="" class="onlinecv"></a>
+				    	</div>
+					</div>
+				</div>
+				 
+				<div class="flip-container centre" ontouchstart="this.classList.toggle('hover');">
+					<div class="flipper">
+				    	<div class="front">
+				        	<!-- front content -->
+				        	<strong>github</strong>
+				      	</div>
+					    <div class="back">
+					        <!-- back content -->
+					        <a href="github.html" title="my online CV" alt="" class="github"></a>
+					    </div>
+				    </div>
+				</div>
+				  
+				<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+				    <div class="flipper">
+				    	<div class="front">
+				        	<!-- front content -->
+				        	<strong>portfolio</strong>
+				      	</div>
+				      	<div class="back">
+				        	<!-- back content -->
+				        	<a href="portfolio.html" title="my online CV" alt="" class="portfolio"></a>
+				      	</div>
+				    </div>
+				</div>
+			</nav>
+			<h3>&copy; 2017 <a href="index.html">Insight Internet</a></h3>
+		</footer>
+	</div>
+  </footer>
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write(' src="js/libs/jquery-1.7.1.min.js">')</script>
+  <script src="js/libs/jquery-1.7.1.min.js"></script>
+-->
+  <!-- scripts concatenated and minified via build script -->
+  <script src="../js/plugins.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.js"></script>
+  <script src="js/scripts.js"></script>
+  <!-- end scripts -->
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet 
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>-->
+  <script>
+	$(function() {
+  	// initialize scrollable
+  	$(".scrollable").scrollable();
+	});
+	/*function popUp() {
+	    window.open("yha-email/index.htm");
+	};*/
+
+  </script>
+
+</body>
+</html>
