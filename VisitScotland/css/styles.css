@@ -6,7 +6,7 @@
 .weather-app {
     position: relative;
     margin: auto;
-    width: 350px;
+    width: 310px;
     height: 300px;
     overflow: hidden;
     background-image: url(https://sttc.visitscotland.com/static/img/backgrounds/grey-tartan-mid.jpg);
@@ -47,11 +47,18 @@
 }
 
 .weather-app .humidity {
+    top: -1rem;
+    position: relative;
     width: 45%;
     float: left;
     font-size: 1rem;
     font-weight: bold;
     height: 21px;
+}
+
+.weather-app .wind {
+    top: -.5rem;
+    position: relative;
 }
 
 .weather-app .location {
