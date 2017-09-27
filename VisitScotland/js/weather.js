@@ -102,7 +102,7 @@ $(document).ready(function() {
           noResults: '',
           results: function() {
             //limit the width of the autocomplete results to be same as input
-            weatherInput.autocomplete("widget").width(150);
+            //weatherInput.autocomplete("widget").width(150);
           }
       }
     });
