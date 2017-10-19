@@ -70,8 +70,7 @@ $(document).ready(function() {
     humidity.innerHTML = weather.humidity;
     loc.innerHTML = weather.loc;
     temp.innerHTML = weather.temp;
-    //icon.src = "../images/" + weather.icon;
-    $('.weather-image i').attr('class', 'vsicons-' + weather.icon);
+    icon.src = "images/" + weather.icon + ".png";
   }
 
   window.onload = function() {
