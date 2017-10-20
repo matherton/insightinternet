@@ -20,8 +20,12 @@
 
 .weather-app .weather-image {
     float: left;
-    width: 29%;
+    width: 30%;
     max-height: 79px;
+}
+
+.weather-image img {
+    margin-top: -1.5em;
 }
 
 .weather-app .left {
@@ -36,7 +40,7 @@
 .weather-app .temperature {
     margin-bottom: 50px;
     font-size: 3rem;
-    width: 25%;
+    width: 24%;
     float: left;
 }
 
@@ -224,4 +228,9 @@
     color: #af006e;
     font-size: 2.5rem;
     vertical-align: sub;
+}
+
+/* ensuring selected areas don't appear below the footer on the page */
+.ui-helper-hidden-accessible {
+    visibility: hidden;
 }
