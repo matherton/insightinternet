@@ -330,6 +330,13 @@ h2.visitscot {
 	height: 50px;
 	text-indent: -9999px;
 }
+
+h2.efund {
+  background: url('../img/portfolio/sprite.png') no-repeat 0 -1341px;
+  width: 285px;
+  height: 81px;
+  text-indent: -9999px;
+}
 /* portfolio jQuery gallery */
 
 a:active {
