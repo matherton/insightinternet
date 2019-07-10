@@ -344,6 +344,13 @@ h2.tripsology {
   height: 43px;
   text-indent: -9999px;
 }
+
+h2.connect {
+  background: url('../img/portfolio/sprite.png') no-repeat 0 -1482px;
+  width: 285px;
+  height: 39px;
+  text-indent: -9999px;
+}
 /* portfolio jQuery gallery */
 
 a:active {
