@@ -1,208 +1,369 @@
-<!doctype html>
+<!DOCTYPE html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> 
-<html class="no-js" lang="en"> <!--<![endif]-->
-<script src="js/libs/jquery-1.6.1.js" type="text/javascript"></script>
-<script src="js/twitter.js"></script>
-<head>
-  <meta charset="utf-8">
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+	<!--<![endif]-->
+	<script src="js/libs/jquery-1.6.1.js" type="text/javascript"></script>
+	<script src="js/twitter.js"></script>
+	<head>
+		<meta charset="utf-8" />
 
-  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		<!-- Use the .htaccess and remove these lines to avoid edge case issues.
        More info: h5bp.com/i/378 -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-  <title>Insight Internet</title>
-  <meta name="description" content="">
+		<title>Insight Internet</title>
+		<meta name="description" content="" />
 
-  <!-- Mobile viewport optimized: h5bp.com/viewport -->
-  <meta name="viewport" content="width=device-width">
+		<!-- Mobile viewport optimized: h5bp.com/viewport -->
+		<meta name="viewport" content="width=device-width" />
 
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
-  <link rel="stylesheet" href="css/ii-styles.css">
+		<link rel="stylesheet" href="css/ii-styles.css" />
 
-  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+		<!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
-  <!-- All JavaScript at the bottom, except this Modernizr build.
+		<!-- All JavaScript at the bottom, except this Modernizr build.
        Modernizr enables HTML5 elements & feature detects for optimal performance.
        Create your own custom Modernizr build: www.modernizr.com/download/ -->
-  <script src="js/libs/modernizr-2.5.3.min.js"></script>
-  <script src="js/tweet.js"></script>
-  <link rel="icon" href="img/me.ico">
-</head>
-<body class="home">
-	
-  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+		<script src="js/libs/modernizr-2.5.3.min.js"></script>
+		<script src="js/tweet.js"></script>
+		<link rel="icon" href="img/me.ico" />
+	</head>
+	<body class="home">
+		<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
-  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  
-  <div id="header-container">
-  	<header>
-		<header class="wrapper clearfix">
-			<div id="half-oval-top"></div>
-			<a href="index.html" title="back to home"><h1 id="title">Insight Internet</h1></a>
-			<div id="half-oval-bottom"></div>
-			<nav>
-				<ul class="touchscreen-nav">
-					<li><a id="about" href="cv.html" title="my online CV"><hide>online </hide>CV</a></li>
-					<li><a id="github" href="github.html" title="social coding">git</a></li>
-					<li><a id="portfolio" href="portfolio.html" title="my portfolio">portfolio</a></li>
-				</ul>
-				<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-				    <div class="flipper">
-				      	<div class="front">
-				        	<!-- front content -->
-				        	<strong>online CV</strong>
-				      	</div>
-				      	<div class="back">
-					        <!-- back content -->
-					        <a href="cv.html" title="my online CV" alt="" class="onlinecv"></a>
-				    	</div>
-					</div>
-				</div>
-				 
-				<div class="flip-container centre" ontouchstart="this.classList.toggle('hover');">
-					<div class="flipper">
-				    	<div class="front">
-				        	<!-- front content -->
-				        	<strong>github</strong>
-				      	</div>
-					    <div class="back">
-					        <!-- back content -->
-					        <a href="github.html" title="my online CV" alt="" class="github"></a>
-					    </div>
-				    </div>
-				</div>
-				  
-				<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-				    <div class="flipper">
-				    	<div class="front">
-				        	<!-- front content -->
-				        	<strong>portfolio</strong>
-				      	</div>
-				      	<div class="back">
-				        	<!-- back content -->
-				        	<a href="portfolio.html" title="my online CV" alt="" class="portfolio"></a>
-				      	</div>
-				    </div>
-				</div>
-			</nav>
-		</header>
-  	</header>
-  </div> <!-- close header-container -->
-   
-  <div id="main-container">
-		<div id="main" class="wrapper clearfix">
-			
-			<article>
-				<header>
-					<h1>Welcome</h1>
-					<p>Hey! My name is Mark and I am a Web Developer based in Edinburgh. I have been working in 
-					various web roles since graduating in 2002 in areas as diverse as Lerwick in the Shetland Islands 
-					to Sydney, Australia. I decided to produce this site to showcase some highlights of the work I 
-					have been involved in.</p>
+		<!--[if lt IE 7
+			]><p class="chromeframe">
+				Your browser is <em>ancient!</em>
+				<a href="http://browsehappy.com/"
+					>Upgrade to a different browser</a
+				>
+				or
+				<a href="http://www.google.com/chromeframe/?redirect=true"
+					>install Google Chrome Frame</a
+				>
+				to experience this site.
+			</p><!
+		[endif]-->
+
+		<div id="header-container">
+			<header>
+				<header class="wrapper clearfix">
+					<div id="half-oval-top"></div>
+					<a href="index.html" title="back to home"
+						><h1 id="title">Insight Internet</h1></a
+					>
+					<div id="half-oval-bottom"></div>
+					<nav>
+						<ul class="touchscreen-nav">
+							<li>
+								<a
+									id="about"
+									href="cv.html"
+									title="my online CV"
+									><hide>online </hide>CV</a
+								>
+							</li>
+							<li>
+								<a
+									id="github"
+									href="github.html"
+									title="social coding"
+									>git</a
+								>
+							</li>
+							<li>
+								<a
+									id="portfolio"
+									href="portfolio.html"
+									title="my portfolio"
+									>portfolio</a
+								>
+							</li>
+						</ul>
+						<div
+							class="flip-container"
+							ontouchstart="this.classList.toggle('hover');"
+						>
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+									<strong>online CV</strong>
+								</div>
+								<div class="back">
+									<!-- back content -->
+									<a
+										href="cv.html"
+										title="my online CV"
+										alt=""
+										class="onlinecv"
+									></a>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="flip-container centre"
+							ontouchstart="this.classList.toggle('hover');"
+						>
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+									<strong>github</strong>
+								</div>
+								<div class="back">
+									<!-- back content -->
+									<a
+										href="github.html"
+										title="my online CV"
+										alt=""
+										class="github"
+									></a>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="flip-container"
+							ontouchstart="this.classList.toggle('hover');"
+						>
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+									<strong>portfolio</strong>
+								</div>
+								<div class="back">
+									<!-- back content -->
+									<a
+										href="portfolio.html"
+										title="my online CV"
+										alt=""
+										class="portfolio"
+									></a>
+								</div>
+							</div>
+						</div>
+					</nav>
 				</header>
-				<section>
-					<h2>About me</h2>
-					<p>One thing that has remained constant throughout all my previous positions has always been 
-					my desire to make my work accessible to everyone regardless of OS or device. I have created this 
-					site so it is fully responsive and can be viewed equally well on any platform.</p>
-					<h3>About this site</h3>
-					<p>I have broke the content of insightinternet.co.uk into 3 areas that can be accessed via the links above and in the footer:</p>
-					<ol>
-						<li><a href="cv.html">online CV</a> - This is page contains information on previous projects, contact details and my education</li>
-						<li><a href="github.html">git</a> - this page contains some of my live Github contributions created while working at the Stage Media Company with links to both my codepen and github profiles</li>
-						<li><a href="portfolio.html">portfolio</a> - This page showcases my previous work</li>
-					</ol>
-				</section>
-				<section class="formBtnHolder">
-					<button onclick="fixedSizePopup()" class="open-form">Open contact form</button>
-				</section>
-			</article>
-			
-			<aside>
-				<h3 class="twitter"><a href="http://twitter.com/insightinternet" id="twitter-title">@insightinternet</a></h3>
-				<!-- <div class=”tweet”> -->
+			</header>
+		</div>
+		<!-- close header-container -->
+
+		<div id="main-container">
+			<div id="main" class="wrapper clearfix">
+				<article>
+					<header>
+						<h1>Welcome</h1>
+						<p>
+							Hey! My name is Mark and I am a Web Developer based
+							in Edinburgh. I have been working in various web
+							roles since graduating in 2002 in areas as diverse
+							as Lerwick in the Shetland Islands to Sydney,
+							Australia. I decided to produce this site to
+							showcase some highlights of the work I have been
+							involved in.
+						</p>
+					</header>
+					<section>
+						<h2>About me</h2>
+						<p>
+							One thing that has remained constant throughout all
+							my previous positions has always been my desire to
+							make my work accessible to everyone regardless of OS
+							or device. I have created this site so it is fully
+							responsive and can be viewed equally well on any
+							platform.
+						</p>
+						<h3>About this site</h3>
+						<p>
+							I have broke the content of insightinternet.co.uk
+							into 3 areas that can be accessed via the links
+							above and in the footer:
+						</p>
+						<ol>
+							<li>
+								<a href="cv.html">online CV</a> - This is page
+								contains information on previous projects,
+								contact details and my education
+							</li>
+							<li>
+								<a href="github.html">git</a> - this page
+								contains some of my live Github contributions
+								created while working at the Stage Media Company
+								with links to both my codepen and github
+								profiles
+							</li>
+							<li>
+								<a href="portfolio.html">portfolio</a> - This
+								page showcases my previous work
+							</li>
+						</ol>
+					</section>
+					<section class="formBtnHolder">
+						<button onclick="fixedSizePopup()" class="open-form">
+							Open contact form
+						</button>
+					</section>
+				</article>
+
+				<aside>
+					<h3 class="twitter">
+						<a
+							href="http://twitter.com/insightinternet"
+							id="twitter-title"
+							>@insightinternet</a
+						>
+					</h3>
+					<!-- <div class=”tweet”> -->
 					<!-- embed my tweets -->
-					<a class="twitter-timeline" href="https://twitter.com/insightinternet" data-widget-id="374106620864626688">Tweets by @insightinternet</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					<a
+						class="twitter-timeline"
+						href="https://twitter.com/insightinternet"
+						data-widget-id="374106620864626688"
+						>Tweets by @insightinternet</a
+					>
+					<script>
+						!(function(d, s, id) {
+							var js,
+								fjs = d.getElementsByTagName(s)[0],
+								p = /^http:/.test(d.location)
+									? "http"
+									: "https";
+							if (!d.getElementById(id)) {
+								js = d.createElement(s);
+								js.id = id;
+								js.src =
+									p + "://platform.twitter.com/widgets.js";
+								fjs.parentNode.insertBefore(js, fjs);
+							}
+						})(document, "script", "twitter-wjs");
+					</script>
 
-				<!-- </div> -->
-			</aside>
-			
-		</div> <!-- #main closed -->
-  </div> <!-- #main-container closed -->
-  <footer>
-	<div id="footer-container">
-		<footer class="wrapper">
-			<nav>
-				<ul class="touchscreen-nav">
-					<li><a id="about" href="cv.html" title="My online CV"><hide>online </hide>CV</a></li>
-					<li><a id="github" href="github.html" title="social coding">git</a></li>
-					<li><a id="portfolio" href="portfolio.html" title="My portfolio">portfolio</a></li>
-				</ul>
-				<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-				    <div class="flipper">
-				      	<div class="front">
-				        	<!-- front content -->
-				        	<strong>online CV</strong>
-				      	</div>
-				      	<div class="back">
-					        <!-- back content -->
-					        <a href="cv.html" title="my online CV" alt="" class="onlinecv"></a>
-				    	</div>
-					</div>
-				</div>
-				 
-				<div class="flip-container centre" ontouchstart="this.classList.toggle('hover');">
-					<div class="flipper">
-				    	<div class="front">
-				        	<!-- front content -->
-				        	<strong>github</strong>
-				      	</div>
-					    <div class="back">
-					        <!-- back content -->
-					        <a href="github.html" title="my online CV" alt="" class="github"></a>
-					    </div>
-				    </div>
-				</div>
-				  
-				<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-				    <div class="flipper">
-				    	<div class="front">
-				        	<!-- front content -->
-				        	<strong>portfolio</strong>
-				      	</div>
-				      	<div class="back">
-				        	<!-- back content -->
-				        	<a href="portfolio.html" title="my online CV" alt="" class="portfolio"></a>
-				      	</div>
-				    </div>
-				</div>
-			</nav>
-			<h3>&copy; 2018 <a href="index.html">Insight Internet</a></h3>
+					<!-- </div> -->
+				</aside>
+			</div>
+			<!-- #main closed -->
+		</div>
+		<!-- #main-container closed -->
+		<footer>
+			<div id="footer-container">
+				<footer class="wrapper">
+					<nav>
+						<ul class="touchscreen-nav">
+							<li>
+								<a
+									id="about"
+									href="cv.html"
+									title="My online CV"
+									><hide>online </hide>CV</a
+								>
+							</li>
+							<li>
+								<a
+									id="github"
+									href="github.html"
+									title="social coding"
+									>git</a
+								>
+							</li>
+							<li>
+								<a
+									id="portfolio"
+									href="portfolio.html"
+									title="My portfolio"
+									>portfolio</a
+								>
+							</li>
+						</ul>
+						<div
+							class="flip-container"
+							ontouchstart="this.classList.toggle('hover');"
+						>
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+									<strong>online CV</strong>
+								</div>
+								<div class="back">
+									<!-- back content -->
+									<a
+										href="cv.html"
+										title="my online CV"
+										alt=""
+										class="onlinecv"
+									></a>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="flip-container centre"
+							ontouchstart="this.classList.toggle('hover');"
+						>
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+									<strong>github</strong>
+								</div>
+								<div class="back">
+									<!-- back content -->
+									<a
+										href="github.html"
+										title="my online CV"
+										alt=""
+										class="github"
+									></a>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="flip-container"
+							ontouchstart="this.classList.toggle('hover');"
+						>
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+									<strong>portfolio</strong>
+								</div>
+								<div class="back">
+									<!-- back content -->
+									<a
+										href="portfolio.html"
+										title="my online CV"
+										alt=""
+										class="portfolio"
+									></a>
+								</div>
+							</div>
+						</div>
+					</nav>
+					<h3>
+						&copy; 2019 <a href="index.html">Insight Internet</a>
+					</h3>
+				</footer>
+			</div>
 		</footer>
-	</div>
-  </footer>
 
+		<!-- JavaScript at the bottom for fast page loading -->
 
-  <!-- JavaScript at the bottom for fast page loading -->
-
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline
+		<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"></script>')</script>-->
-  <script src="js/libs/jquery-1.7.1.min.js"></script>
+		<script src="js/libs/jquery-1.7.1.min.js"></script>
 
-  <!-- scripts concatenated and minified via build script -->
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
-  <!-- end scripts -->
+		<!-- scripts concatenated and minified via build script -->
+		<script src="js/plugins.js"></script>
+		<script src="js/script.js"></script>
+		<!-- end scripts -->
 
-  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+		<!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
        mathiasbynens.be/notes/async-analytics-snippet 
   <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
@@ -210,5 +371,5 @@
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
   </script>-->
-</body>
+	</body>
 </html>
