@@ -351,6 +351,14 @@ h2.connect {
   height: 39px;
   text-indent: -9999px;
 }
+
+h2.digital {
+  background: url('../img/portfolio/sprite.png') no-repeat -1px -1523px;
+  width: 100px;
+  height: 100px;
+  text-indent: -9999px;
+}
+
 /* portfolio jQuery gallery */
 
 a:active {
