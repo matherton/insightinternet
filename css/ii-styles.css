@@ -359,6 +359,19 @@ h2.digital {
   text-indent: -9999px;
 }
 
+h2.lloyds {
+	background: url('../img/portfolio/sprite.png') no-repeat -1px -1625px;
+  width: 255px;
+  height: 118px;
+  text-indent: -9999px;
+}
+
+h2.specsavers {
+  background: url('../img/portfolio/sprite.png') no-repeat -1px -1744px;
+  width: 255px;
+  height: 98px;
+  text-indent: -9999px;
+}
 /* portfolio jQuery gallery */
 
 a:active {
