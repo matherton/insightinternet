@@ -27,6 +27,7 @@ body {
 	letter-spacing: -3px;
 	background: -webkit-linear-gradient(#e0a639, #fdfd45, #e0a639);
 	-webkit-background-clip: text;
+    background-clip: text;
 	-webkit-text-fill-color: transparent;
 	display: block;
 	position: relative;
