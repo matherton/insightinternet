@@ -8,6 +8,43 @@ let pressed = {};
 window.addEventListener('keydown', handleKeyDown, false);
 window.addEventListener('keyup', handleKeyUp, false);
 
+(function(){
+  const resetSpinBtn = document.getElementById("spinBtn");
+
+  resetSpinBtn.addEventListener("click", function(){
+            
+            let state1 = document.getElementById('t1').value;
+            let state2 = document.getElementById('t2').value;
+            let duration = 150;
+            animateWheel(duration);
+            slowingDown = true;
+            if ( resetSpinBtn.innerHTML == state1 ) {
+              resetSpinBtn.innerHTML = state2;
+            }
+    else if ( resetSpinBtn.innerHTML == state2 ) {
+                resetSpinBtn.innerHTML = state1;
+            }
+            // add as many dynamic values as you wish here
+            else {
+                // to be on the safe side
+                resetSpinBtn.innerHTML = state1;
+            }
+            resetSpinBtn.disabled = true;
+            setTimeout(function(){
+              resetSpinBtn.disabled = false;
+              resetSpinBtn.innerHTML = state2;
+            },15000);
+  }, false);
+
+})();
+
+/*document.getElementById('test').addEventListener("click", function() {
+  console.log('button pressed!');
+  
+  alert('how do I spn the wheel?');
+  document.getElementById('test').innerHTML = "Hello World";
+});*/
+
 function handleKeyDown(e) {
   if (e.keyCode === 32 && slowingDown === false) {
     animateKeyOut();

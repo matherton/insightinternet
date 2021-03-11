@@ -11,6 +11,14 @@ body {
 	font-family: 'Work Sans', sans-serif;
 }
 
+#spinBtn {
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+	top: 10px;
+	transform: translateX(-50%);
+}
+
 .logo {
 	text-transform: uppercase;
 	font-weight: 900;
