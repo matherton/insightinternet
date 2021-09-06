@@ -372,6 +372,13 @@ h2.specsavers {
   height: 98px;
   text-indent: -9999px;
 }
+
+h2.arnoldclark {  
+  background: url(../img/portfolio/sprite.png) no-repeat -3px -1839px;
+  width: 255px;
+  height: 40px;
+  text-indent: -9999px;
+}
 /* portfolio jQuery gallery */
 
 a:active {
