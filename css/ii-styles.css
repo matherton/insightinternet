@@ -509,6 +509,10 @@ a.disabled {
 	margin: 20px auto 30px;
 }
 
+.imgagegallery.large {
+	max-width: 835px;
+}
+
 .imgagegallery-selfridges {
 	text-align: center;
 	border:1px solid #ccc;
