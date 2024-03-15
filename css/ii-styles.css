@@ -448,6 +448,15 @@ body.portfolio-page nav a#portfolio {
   background: #727493 url("../img/vert-sprite-blank-top.png") no-repeat 49% -230px;
 }
 
+/* Avatar styles */
+header img {
+  position: relative;
+  float: right;
+  height: 133px;
+  width: auto;
+  padding: 0 0.5rem 0.5rem;
+}
+
 /* Portfolio styles */
 
 h1.portfolio {
